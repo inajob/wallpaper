@@ -70,7 +70,9 @@ $(function(){
   setInterval(function(){
     $('.image').cssFadeOut('slow',function(){
       draw();
-      $('.image').cssFadeIn(5000);
+      setTimeout(function(){
+      $('.image').cssFadeIn(3000);
+      ,1000);
     })
   }, 5000);
   draw();
