@@ -71,8 +71,8 @@ $(function(){
     $('.image').cssFadeOut('slow',function(){
       draw();
       setTimeout(function(){
-      $('.image').cssFadeIn(3000);
-      ,1000);
+        $('.image').cssFadeIn(3000);
+      } ,1000);
     })
   }, 5000);
   draw();
