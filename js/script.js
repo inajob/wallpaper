@@ -68,10 +68,10 @@ $(function(){
   }
 
   setInterval(function(){
-    $('.image').cssFadeOut('slow',function(){
+    $('.image').cssAnimate({opacity:0, left:-50},'slow',function(){
       draw();
       setTimeout(function(){
-        $('.image').cssFadeIn(3000);
+        $('.image').cssAnimate({opacity:1, left:0},3000);
       } ,1000);
     })
   }, 10000);
