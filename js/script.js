@@ -43,7 +43,7 @@ $(function(){
     ctx.lineWidth = 3;
 
     // hour 
-    var hour = d.getHours()/60 + d.getMinutes()/60/60;
+    var hour = (d.getHours() + d.getMinutes()/60)/12;
     ctx.beginPath();
     ctx.moveTo(0,0);
     ctx.lineTo(Math.cos(hour * Math.PI * 2 - Math.PI / 2) * size/3, Math.sin(hour * Math.PI * 2 - Math.PI / 2) * size/3);
