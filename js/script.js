@@ -15,7 +15,7 @@ $(function(){
   }
   function getDate(date){
     var y = date.getFullYear();
-    var m = two(date.getMonth());
+    var m = two(date.getMonth() + 1);
     var d = two(date.getDate());
     var h = two(date.getHours());
     var i = two(date.getMinutes());
